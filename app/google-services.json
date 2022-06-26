@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "783205781127",
+    "project_id": "klcovid",
+    "storage_bucket": "klcovid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783205781127:android:8746207046d195cf583222",
+        "android_client_info": {
+          "package_name": "com.example.klcovid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783205781127-g3r57080lgadc49emat0gas4v4n80uh6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlXi_zpOmdBcdrvRti0ulFWcH5jHlbwZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783205781127-g3r57080lgadc49emat0gas4v4n80uh6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

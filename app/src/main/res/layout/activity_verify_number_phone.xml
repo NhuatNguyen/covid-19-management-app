@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainactivities.VerifyNumberPhone"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/coronavirus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/allerta"
+                android:includeFontPadding="false"
+                android:text="App Covid,\n Chào Mừng"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/textFullname"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                android:hint="Nhập số điện thoại"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/edtInputNumber"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:background="@drawable/background_btn_qr"
+                android:text="Đăng nhập"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textColor="@color/black"
+                app:backgroundTint="#1DB7AE"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

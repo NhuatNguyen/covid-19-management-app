@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap xmlns:android="http://schemas.android.com/apk/res/android">
+    <entry>
+        <key>user</key>
+        <value>http://192.168.1.200:3000/api/user/</value>
+    </entry>
+    <entry>
+        <key>check_place</key>
+        <value>http://192.168.1.200:3000/api/user/checkin-place</value>
+    </entry>
+    <entry>
+        <key>place</key>
+        <value>http://192.168.1.200:3000/api/place</value>
+    </entry>
+</defaultsMap>

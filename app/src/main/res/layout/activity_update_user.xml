@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainactivities.UpdateUser">
+    <LinearLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/TitleUpdate"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgbackinfor"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/logout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cập Nhật Thông Tin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_below="@+id/TitleUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="@dimen/_12ssp"
+                android:textColor="#f00000"
+                android:id="@+id/txtnotify"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="Khuyến cáo: Khai báo thông tin sai sự thật có thể bị xét vào hình thức vi phạm."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@+id/txtnotify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:padding="5dp"
+                android:id="@+id/textFullname"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                android:hint="Họ Tên"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/edtUpdateFullname"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine|textImeMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:padding="5dp"
+                android:id="@+id/textaddress"
+                android:layout_below="@id/textFullname"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                android:hint="Địa Chỉ"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/edtUpdateAddress"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine|textImeMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:padding="5dp"
+                android:id="@+id/textnumberphone"
+                android:layout_below="@id/textaddress"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                android:hint="Số Điện Thoại"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/edtUpdateNumberphone"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:focusable="false"
+                    android:inputType="textMultiLine|textImeMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:padding="5dp"
+                android:id="@+id/textidphone"
+                android:layout_below="@id/textnumberphone"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                android:hint="Giới Tính"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_update_male"
+                    android:inputType="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_below="@+id/textidphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/btnUpdateUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lưu thông tin"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#006400"
+                    android:background="@drawable/background_btn_qr"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

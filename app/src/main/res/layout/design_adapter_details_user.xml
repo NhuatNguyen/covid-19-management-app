@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="left|center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp">
+        <TextView
+            android:id="@+id/txtDesignInjected"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:text="Số lượng tiêm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+        <TextView
+            android:id="@+id/txtDesignNameVaccin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:text="Tên Vaccin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+        <TextView
+            android:id="@+id/txtDesignDatetime"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:text="Ngày Tiêm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"/>
+    </LinearLayout>
+</RelativeLayout>

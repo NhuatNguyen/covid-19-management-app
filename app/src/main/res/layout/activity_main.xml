@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainactivities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_2sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/imgbackinfor"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:padding="@dimen/_3sdp"
+            android:layout_margin="@dimen/_18sdp"
+            android:src="@drawable/x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/mukta_bold"
+            android:includeFontPadding="false"
+            android:text="Mã\nOTP"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_70sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/mukta_vaani_semibold"
+            android:text="Cho Phép"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/txtinfoverifynumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/allerta"
+            android:includeFontPadding="false"
+            android:text="Nhấn để gửi mã OTP vào số\n                   0963493525"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+        <com.chaos.view.PinView
+            android:id="@+id/edtOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemCount="6"
+            app:itemWidth="@dimen/_33sdp"
+            app:itemHeight="@dimen/_32sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:lineColor="@color/lightwithe"
+            style="@style/PinWidget.PinView"
+            android:inputType="number"
+            android:cursorVisible="true"
+            app:hideLineWhenFilled="true"
+            app:itemRadius="@dimen/_5sdp"
+            />
+
+        <Button
+            android:id="@+id/btnVerifyCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:background="@drawable/background_btn_qr"
+            android:text="Gửi mã OTP"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/black"
+            app:backgroundTint="#1DB7AE"
+            />
+        <TextView
+            android:id="@+id/txtrequestOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/allerta"
+            android:includeFontPadding="false"
+            android:text="Gửi lại mã OTP"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.klcovid">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KLCovid">
+        <activity android:name=".Mainactivities.VerifyNumberPhone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Mainactivities.UpdateUser" android:screenOrientation="portrait"/>
+        <activity android:name=".Mainactivities.Scanner_QR" android:screenOrientation="portrait"/>
+        <activity android:name=".Mainactivities.Download_QR" android:screenOrientation="portrait"/>
+        <activity android:name=".Mainactivities.Display_Infor_User" android:screenOrientation="portrait"/>
+        <activity android:name=".Mainactivities.Details_infor_user" android:screenOrientation="portrait"/>
+        <activity android:name=".Mainactivities.Create_User" android:screenOrientation="portrait"/>
+        <activity android:name=".Mainactivities.Check_NumberPhone" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Mainactivities.MainActivity" android:screenOrientation="portrait">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

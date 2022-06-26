@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainactivities.Display_Infor_User"
+    android:background="#E5FCFB"
+    android:scrollbars="none">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_background"
+            android:background="#1DB7AE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgQRUser"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/txtNameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Đang tải dữ liệu"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/imgQRUser"
+                app:layout_constraintStart_toStartOf="@+id/imgQRUser"
+                app:layout_constraintTop_toBottomOf="@+id/imgQRUser" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="THÔNG TIN COVID"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/txt_notification_sick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_16ssp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/txtNameUser"
+                app:layout_constraintStart_toStartOf="@+id/txtNameUser"
+                app:layout_constraintTop_toBottomOf="@+id/txtNameUser" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom_background_light_green"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_notification_sick">
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_16sdp"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/UpdateUser"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7">
+
+                                <ImageView
+                                    android:id="@+id/img1"
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:background="@drawable/circle_green"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/draw1"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/update" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/txt1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="Cập Nhật"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_16sdp"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintdownloadQR"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7">
+
+                                <ImageView
+                                    android:id="@+id/img2"
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:background="@drawable/circle_green"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/draw2"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/download" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/txt2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="Tải Mã QR"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_16sdp"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/ConstraintViewInfor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7">
+
+                                <ImageView
+                                    android:id="@+id/img4"
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:background="@drawable/circle_green"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/draw4"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/info" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/txt4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="Xem Thông Tin"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_16sdp"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/ConstraintScannerQR"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7">
+
+                                <ImageView
+                                    android:id="@+id/img5"
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:background="@drawable/circle_green"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/draw5"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/qrscan" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/txt5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="Quét Mã QR"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_16sdp"
+                            android:orientation="vertical"
+                            android:visibility="invisible"
+                            android:weightSum="10">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintlogout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7">
+
+                                <ImageView
+                                    android:id="@+id/img7"
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:background="@drawable/circle_green"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/draw7"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/logout" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/txt7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="Logout"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progress_display_fullname"-->
+<!--                style="?android:attr/progressBarStyle"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/imgQRUser"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/imgQRUser"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/imgQRUser" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
